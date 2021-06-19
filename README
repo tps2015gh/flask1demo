@@ -1,1 +1,11 @@
 README  : flask1demo 
+
+// TODO
+2021-06-19
+Develope script for setup evnironent  
+-  venv 
+-  install flask 
+-  install pymysql
+-  update pip  
+-  others .. 
+-  script to run program  
