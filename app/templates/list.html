@@ -1,0 +1,12 @@
+{% extends "_frame.html" %}
+
+{% block content %}
+<hr> list.html
+<br> users = {{users}}
+
+<hr> 
+{%for user in users%}
+<br> {{user}} 
+{%endfor%}
+
+{% endblock %}

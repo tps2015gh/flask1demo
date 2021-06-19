@@ -1,0 +1,32 @@
+<!doctype html> 
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Microblog</title>
+      {% else %}
+      <title>Welcome to Microblog</title>
+      {% endif %}
+    </head>
+    <body>
+        <style>
+        .bg-lightblue {background-color:lightblue;}
+        .pad10px {padding:10px;}
+        .bd1green {border:1px solid green;}
+        .hi100per {height:100%;}
+        .hi400pxup{min-height:400px;}
+        .hi500pxup{min-height:500px;}
+        .hi600pxup{min-height:600px;}
+        .mt4px{margin-top:4px; }
+        .mb4px{margin-bottom:4px; }
+        </style>
+
+        <div class="pad10px bd1green mt4px mb4px bg-lightblue" > 
+        {% include "_header.html" %}
+        </div> 
+        <div class="bd1green pad10px hi500pxup" >
+        <hr>
+        {% block content %}{% endblock %}
+        </div>
+        {% include "_footer.html" %}
+    </body>
+</html>
